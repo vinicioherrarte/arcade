@@ -4,13 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
-## Commands
-
-- `npm run dev`: dev server at http://localhost:3000
-- `npm run build`: production build, which also type-checks
-- `npm run start`: serve the production build
-- `npm run lint`: ESLint flat config in `eslint.config.mjs` (lints the whole project)
-- `npx tsc --noEmit`: standalone type check (strict mode)
+## SKILLS
+use the skill /front-design when you need to create designs in HTML and create UI views.
 
 There is no test runner configured, so there is no single-test command.
 
