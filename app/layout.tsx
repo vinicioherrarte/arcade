@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, Courier_Prime, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "@/app/components/nav";
+import Footer from "@/app/components/footer";
 
 // Fuentes de app/references/app.jsx. next/font las descarga en build y las sirve
 // desde este mismo dominio, sin peticiones a fonts.googleapis.com en runtime.
@@ -38,7 +40,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <div className="av-bg"></div>
         <div className="av-noise"></div>
-        <div id="root">{children}</div>
+        <div id="root">
+          <Nav />
+          <main className="av-main">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

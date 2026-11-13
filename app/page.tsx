@@ -1,4 +1,7 @@
-// Hero de la biblioteca (app/references/biblioteca.jsx), con las clases del tema global.
+import LibraryView from "@/app/components/library-view";
+import { CATS, GAMES } from "@/app/data/games";
+
+// Biblioteca (app/references/biblioteca.jsx): hero, buscador, chips y grid de tarjetas.
 export default function Home() {
   return (
     <div className="fade-in">
@@ -8,6 +11,7 @@ export default function Home() {
           INSERTA UNA MONEDA PARA JUGAR <span className="blink">_</span>
         </div>
       </section>
+      <LibraryView games={GAMES} cats={CATS} />
     </div>
   );
 }
