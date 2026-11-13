@@ -1,17 +1,36 @@
-import LibraryView from "@/app/components/library-view";
-import { CATS, GAMES } from "@/app/data/games";
+import ActivityPanels from "@/app/components/home/activity-panels";
+import FeatureGrid from "@/app/components/home/feature-grid";
+import FinalCta from "@/app/components/home/final-cta";
+import GameRail from "@/app/components/home/game-rail";
+import Hero from "@/app/components/home/hero";
+import PricingSection from "@/app/components/home/pricing-section";
+import Reveal from "@/app/components/home/reveal";
+import StatsBlock from "@/app/components/home/stats-block";
 
-// Biblioteca (app/references/biblioteca.jsx): hero, buscador, chips y grid de tarjetas.
+// Landing de inicio (app/references/home-about/home-about/home.jsx).
+// El hero queda sin animación de entrada porque está arriba del pliegue.
 export default function Home() {
   return (
-    <div className="fade-in">
-      <section className="av-hero">
-        <h1 className="flicker">ARCADE VAULT</h1>
-        <div className="sub">
-          INSERTA UNA MONEDA PARA JUGAR <span className="blink">_</span>
-        </div>
-      </section>
-      <LibraryView games={GAMES} cats={CATS} />
+    <div className="home fade-in">
+      <Hero />
+      <Reveal>
+        <FeatureGrid />
+      </Reveal>
+      <Reveal>
+        <GameRail />
+      </Reveal>
+      <Reveal>
+        <StatsBlock />
+      </Reveal>
+      <Reveal>
+        <ActivityPanels />
+      </Reveal>
+      <Reveal>
+        <PricingSection />
+      </Reveal>
+      <Reveal>
+        <FinalCta />
+      </Reveal>
     </div>
   );
 }
