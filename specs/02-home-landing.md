@@ -1,6 +1,6 @@
 # SPEC 02: Landing de inicio en `/` y biblioteca en `/games`
 
-> **Estado:** aprobado
+> **Estado:** implementado
 > **Depende de:** SPEC 01 (pantallas visuales, componentes de biblioteca, nav, datos de ejemplo y tokens de `app/globals.css`).
 > **Fecha:** 2026-11-13
 > **Objetivo:** Reemplazar la home actual por la landing de `app/references/home-about` y mover la biblioteca a `/games`.
