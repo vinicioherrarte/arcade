@@ -1,6 +1,6 @@
 # SPEC 01: MVP de pantallas visuales de Arcade Vault
 
-> **Estado:** aprobado
+> **Estado:** implementado
 > **Depende de:** Ninguna spec. Parte de la base visual ya presente en `app/layout.tsx`, `app/globals.css` y `app/page.tsx` (rama `01-styles`).
 > **Fecha:** 2026-11-12
 > **Objetivo:** Implementar en Next.js las cinco pantallas de `app/references` en su versión visual, sin lógica de juego, sin autenticación real y sin base de datos.
